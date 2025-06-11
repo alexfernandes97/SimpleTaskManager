@@ -11,9 +11,10 @@ public class ToDoList {
           System.out.println();
           System.out.println("1 - Adicionar nova tarefa");
           System.out.println("2 - Listar tarefas");
-          System.out.println("3 - Marcar tarefa como concluída");
-          System.out.println("4 - Remover tarefa");
-          System.out.println("5 - Sair");
+          System.out.println("3 - Ordenar tarefas");
+          System.out.println("4 - Marcar tarefa como concluída");
+          System.out.println("5 - Remover tarefa");
+          System.out.println("6 - Sair");
 
           String answer = scanner.nextLine();
 
@@ -25,22 +26,24 @@ public class ToDoList {
                  manager.listTasks();
                  break;
              case "3":
-                 manager.markTaksAsDone();
+                 manager.sortMenu();
                  break;
              case "4":
-                 manager.removeTask();
+                 manager.markTaksAsDone();
                  break;
              case "5":
+                 manager.removeTask();
+                 break;
+             case "6":
                  isContinue = false;
                  System.out.println("Encerrando programa");
                  break;
              default:
                  System.out.println("Opção inválida");
          }
-
       }
-
         scanner.close();
     }
+
 }
 

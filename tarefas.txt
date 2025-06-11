@@ -1,0 +1,12 @@
+false;agua
+false;areia
+false;balas
+false;chá
+false;comida para os gatos
+false;exercicios
+false;inglÊs
+false;mercado
+false;varrer chão
+true;estudar
+true;lavar louça
+true;toalha
